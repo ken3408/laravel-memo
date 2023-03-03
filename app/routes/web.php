@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Http\Controllers\MemoController;
+use App\Http\Controllers\NoteController;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,22 +26,22 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // メモ一覧画面を表示する
-Route::get('memos/index', [MemoController::class, 'index'])->name('memos.index');
+Route::get('notes/index', [NoteController::class, 'index'])->name('notes.index')->middleware('auth');
 
-// メモ作成画面を表示する
-Route::get('/memos/create', [MemoController::class, 'create'])->name('memos.create');
+// カテゴリー作成画面を表示する
+Route::get('/notes/create', [NoteController::class, 'create'])->name('notes.create')->middleware('auth');
 
-// メモを保存する
-Route::post('/memos/index', [MemoController::class, 'store'])->name('memos.store');
+// カテゴリーを保存する
+Route::post('/notes/{user_id}/index', [NoteController::class, 'store'])->name('notes.store');
 
-// メモ詳細画面を表示する
-Route::get('/memos/{memo}', [MemoController::class, 'show'])->name('memos.show');
+// カテゴリー詳細画面を表示する
+//Route::get('/notes/{note}', [NoteController::class, 'show'])->name('notes.show');
 
-// メモ編集画面を表示する
-Route::get('/memos/{id}/edit', [MemoController::class, 'edit'])->name('memos.edit');
+// カテゴリー編集画面を表示する
+Route::get('/notes/{id}/edit', [NoteController::class, 'edit'])->name('notes.edit');
 
-// メモを更新する
-Route::patch('/memos/{memo}', [MemoController::class, 'update'])->name('memos.update');
+// カテゴリーを更新する
+Route::patch('/notes/{note}', [NoteController::class, 'update'])->name('notes.update');
 
-// メモを削除する
-Route::delete('/memos/{memo}', [MemoController::class, 'destroy'])->name('memos.destroy');
+// カテゴリーを削除する
+Route::delete('/notes/{id}', [NoteController::class, 'destroy'])->name('notes.destroy');
