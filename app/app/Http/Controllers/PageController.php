@@ -30,13 +30,6 @@ class PageController extends Controller
       "note_id" => $request->note_id,
       "user_id" => $user_id
     ]);
-    //dd($request);
-    /*$page = new Page;
-    $page->page_title = $request->page_title;
-    $page->page_content = $$request->page_content;
-    $page->note_id = $$request->note_id;
-    $page->save();*/
-
     return redirect('/dashboard')->with('message', 'カテゴリーを登録しました');
   }
   public function show($id)
