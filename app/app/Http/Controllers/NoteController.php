@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Note;
+use App\Models\Page;
 use Illuminate\Support\Facades\Auth;
 
 class NoteController extends Controller
 {
   public function index()
   {
-    $notes = Note::orderBy('created_at', 'desc')->get();
-    return view('notes.index', compact('notes'));
+    $notes = Note::all();
+    $contents = Page::all();
+    return view('dashboard', compact('notes', 'contents'));
   }
   public function create()
   {
@@ -25,7 +27,12 @@ class NoteController extends Controller
     $note->user_id = $user_id;
     $note->save();
 
-    return redirect()->route('notes.index')->with('message', 'カテゴリーを登録しました');
+    return redirect()->route('notes.show')->with('message', 'カテゴリーを登録しました');
+  }
+  public function show()
+  {
+    $notes = Note::orderBy('created_at', 'desc')->get();
+    return view('notes.show', compact('notes'));
   }
   public function edit($id)
   {
@@ -39,12 +46,6 @@ class NoteController extends Controller
     $note->note_title = $request->note_title;
     $note->save();
 
-    return redirect()->route('notes.index')->with('message', 'カテゴリーを編集しました');
-  }
-  public function destroy($id)
-  {
-    $note = Note::findOrFail($id);
-    $note->forceDelete();
-    return redirect()->route('notes.index')->with('message', 'カテゴリーを削除しました');
+    return redirect()->route('notes.show')->with('message', 'カテゴリーを編集しました');
   }
 }

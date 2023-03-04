@@ -9,4 +9,8 @@ class Note extends Model
 {
   use HasFactory;
   protected $fillable = ['user_id', 'note_title'];
+  public function pages()
+  {
+    return $this->hasMany(Page::class);
+  }
 }

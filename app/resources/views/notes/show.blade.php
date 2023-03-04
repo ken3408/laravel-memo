@@ -10,7 +10,7 @@
   @if (session('message'))
     {{ session('message') }}
   @endif
-  <div class="card-header">Note List</div>
+  <div class="card-header">Category List</div>
     <form action="{{ route('logout') }}" method="post">
       @csrf
       <input type="submit" value="ログアウト">
@@ -18,31 +18,18 @@
     <table class="table">
       <thead>
           <tr>
-              <th>ID</th>
-              <th>Title</th>
+              <th>Category</th>
           </tr>
       </thead>
       <tbody>
         @foreach ($notes as $note)
           <tr>
-            @if($note->deleted_at == null)
-              <td>{{ $note->id }}</td>
               <td>{{ $note->note_title }}</td>
               <td>
-                <form action="{{ route('notes.edit', ['id'=>$note->id]) }}" method="post">
-                  @csrf
-                  @method('patch')
+                <form action="{{ route('notes.edit', ['id'=>$note->id]) }}" method="get">
                   <input type="submit" value="編集"/>
                 </form>
               </td>
-              <td>
-                <form action="{{ route('notes.destroy', ['id'=>$note->id]) }}" method="post">
-                  @csrf
-                  @method('delete')
-                  <input type="submit" value="削除"/>
-                </form>
-              </td>
-            @endif
           </tr>
         @endforeach
       </tbody>
@@ -51,5 +38,6 @@
       <button type="submit" name="create">カテゴリー追加</button>
     </form>
   </div>
+  <a href="{{ route('notes.index') }}">メモ一覧ページはこちら</a>
 </body>
 </html>

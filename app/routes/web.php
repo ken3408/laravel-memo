@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,14 +18,21 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
+Route::redirect('/', '/dashboard');
+/*Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+  Route::redirect('/dashboard', '/notes/index')->name('dashboard');
+  Route::resource('/notes', NoteController::class);
+  Route::resource('/pages', PageController::class);
+});*/
+/*Route::get('/', function () {
   return view('welcome');
-});
+});*/
 
 Auth::routes();
+Route::redirect('/dashboard', '/notes/index')->name('dashboard');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::redirect('/', '/dashboard')->name('dashboard');
 // メモ一覧画面を表示する
 Route::get('notes/index', [NoteController::class, 'index'])->name('notes.index')->middleware('auth');
 
@@ -35,7 +43,7 @@ Route::get('/notes/create', [NoteController::class, 'create'])->name('notes.crea
 Route::post('/notes/{user_id}/index', [NoteController::class, 'store'])->name('notes.store');
 
 // カテゴリー詳細画面を表示する
-//Route::get('/notes/{note}', [NoteController::class, 'show'])->name('notes.show');
+Route::get('/notes', [NoteController::class, 'show'])->name('notes.show');
 
 // カテゴリー編集画面を表示する
 Route::get('/notes/{id}/edit', [NoteController::class, 'edit'])->name('notes.edit');
@@ -45,3 +53,18 @@ Route::patch('/notes/{note}', [NoteController::class, 'update'])->name('notes.up
 
 // カテゴリーを削除する
 Route::delete('/notes/{id}', [NoteController::class, 'destroy'])->name('notes.destroy');
+
+// ページ作成画面を表示する
+Route::get('/pages/create', [PageController::class, 'create'])->name('pages.create')->middleware('auth');
+
+// 作成ページを保存する
+Route::post('/pages/create', [PageController::class, 'store'])->name('pages.store')->middleware('auth');
+
+// ページ詳細画面を表示する
+Route::get('/pages/{id}', [PageController::class, 'show'])->name('pages.show');
+
+// ページを更新する
+Route::patch('/pages/delete', [PageController::class, 'update'])->name('pages.update');
+
+// ページを削除する
+Route::post('/pages/delete/{id}', [PageController::class, 'delete'])->name('pages.delete');
