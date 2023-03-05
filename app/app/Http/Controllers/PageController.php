@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Note;
 use App\Models\Page;
 use Illuminate\Support\Facades\Auth;
+use App\Queries\SearchQuery;
 
 
 
@@ -32,16 +33,24 @@ class PageController extends Controller
     ]);
     return redirect('/dashboard')->with('message', 'カテゴリーを登録しました');
   }
-  public function show($id)
+  public function show(Request $request, $id)
   {
-    // データベースからノートの情報を取得して代入
-    $notes = Note::all();
-
-    // データベースからページの情報を取得して代入
-    $contents = Page::find($id);
+    // 検索フォームからキーワードを受け取る
+    $keyword = $request->input('search');
+    // 変数の初期化
+    $notes = null;
+    $query = Page::query();
+    // キーワードがある場合は、検索クエリにキーワードを適用する
+    if ($keyword) {
+      $notes = SearchQuery::execute($keyword);
+    } else {
+      // データベースからノートの情報を取得して代入
+      $notes = Note::all();
+    }
+    $contents = $query->find($id);
 
     // ダッシュボードを表示
-    return view('dashboard', compact('notes', 'contents'));
+    return view('dashboard', compact('notes', 'contents', 'keyword'));
   }
   public function update(Request $request, $contents_id)
   {
@@ -65,13 +74,7 @@ class PageController extends Controller
     if (!is_null($keyword)) {
       // $keywordの値がある→nullではない→検索フォームに何かしら入力されている
       // キーワードをもとに、部分一致するイベントを取得
-      $notes = Note::whereHas('pages', function ($query) use ($keyword) {
-        $query->where('page_title', 'like', '%' . $keyword . '%')
-          ->orWhere('page_content', 'like', '%' . $keyword . '%');
-      })->with(['pages' => function ($query) use ($keyword) {
-        $query->where('page_title', 'like', '%' . $keyword . '%')
-          ->orWhere('page_content', 'like', '%' . $keyword . '%');
-      }])->get();
+      $notes = SearchQuery::execute($keyword);
       if ($notes->isEmpty()) {
         $notes = Note::with('pages')->get();
         $message = "一致しませんでした。";
@@ -83,6 +86,6 @@ class PageController extends Controller
       $message = "検索条件が指定されていません。";
     }
     $contents = Page::all();
-    return view('dashboard', compact('notes', 'contents', 'message'));
+    return view('dashboard', compact('notes', 'contents', 'keyword', 'message'));
   }
 }

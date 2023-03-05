@@ -42,7 +42,7 @@
               <h2 class="font-bold text-lg">{{ $note->note_title }}</h2>
               <div class="flex flex-col ml-2">
                 @foreach ($note->pages as $page)
-                  <a class="truncate" href="{{ route('pages.show', ['id'=>$page->id]) }}">{{$page->page_title}}</a>
+                  <a class="truncate" href="{{ route('pages.show', ['id'=>$page->id, 'search'=>$keyword]) }}">{{$page->page_title}}</a>
                   {{-- ページ削除ボタン --}}
                   <form action="{{ route('pages.delete', ['id'=>$page->id]) }}" method="post">
                     @csrf
