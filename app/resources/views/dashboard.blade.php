@@ -10,6 +10,19 @@
   @if (session('message'))
   {{ session('message') }}
   @endif
+  @if (isset($message))
+    {{ $message }}
+  @endif
+  @foreach ($errors->all() as $error)
+  <li>{{$error}}</li>
+  @endforeach
+  <form class="form-inline" id="search-form" method="GET" action="{{ route('pages.search') }}">
+    @csrf
+    <!--$wordの値がセットされていれば、$wordの値を、セットされていなければ値は空を返します。-->
+    <input class="form-control mr-sm-2" id="search-input" type="search" name="search" placeholder="キーワードを入力" value="{{ isset($keyword) ? $keyword : '' }}">
+    <br>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+  </form>
   <div class="flex h-screen">
       {{-- メニューエリア --}}
       <div class="">

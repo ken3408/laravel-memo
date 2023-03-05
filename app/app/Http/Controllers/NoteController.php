@@ -11,7 +11,7 @@ class NoteController extends Controller
 {
   public function index()
   {
-    $notes = Note::all();
+    $notes = Note::with('pages')->get();
     $contents = Page::all();
     return view('dashboard', compact('notes', 'contents'));
   }

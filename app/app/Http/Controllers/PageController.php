@@ -58,4 +58,31 @@ class PageController extends Controller
     $page->delete();
     return redirect('/dashboard')->with('message', 'ページを削除しました');
   }
+  public function serach(Request $request)
+  {
+    $keyword = $request->input('search');
+    // 検索フォームに文字が入力されているか判定
+    if (!is_null($keyword)) {
+      // $keywordの値がある→nullではない→検索フォームに何かしら入力されている
+      // キーワードをもとに、部分一致するイベントを取得
+      $notes = Note::whereHas('pages', function ($query) use ($keyword) {
+        $query->where('page_title', 'like', '%' . $keyword . '%')
+          ->orWhere('page_content', 'like', '%' . $keyword . '%');
+      })->with(['pages' => function ($query) use ($keyword) {
+        $query->where('page_title', 'like', '%' . $keyword . '%')
+          ->orWhere('page_content', 'like', '%' . $keyword . '%');
+      }])->get();
+      if ($notes->isEmpty()) {
+        $notes = Note::with('pages')->get();
+        $message = "一致しませんでした。";
+      } else {
+        $message = "以下の内容が一致しました";
+      }
+    } else {
+      $notes = Note::with('pages')->get();
+      $message = "検索条件が指定されていません。";
+    }
+    $contents = Page::all();
+    return view('dashboard', compact('notes', 'contents', 'message'));
+  }
 }

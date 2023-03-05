@@ -68,3 +68,6 @@ Route::patch('/pages/delete', [PageController::class, 'update'])->name('pages.up
 
 // ページを削除する
 Route::post('/pages/delete/{id}', [PageController::class, 'delete'])->name('pages.delete');
+
+// 検索する
+Route::get('/pages', [PageController::class, 'serach'])->name('pages.search');
