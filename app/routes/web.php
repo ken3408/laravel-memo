@@ -71,3 +71,10 @@ Route::post('/pages/delete/{id}', [PageController::class, 'delete'])->name('page
 
 // 検索する
 Route::get('/pages', [PageController::class, 'serach'])->name('pages.search');
+
+// 倫理削除したページの一覧画面を表示する
+Route::post('/pages/trashe', [PageController::class, 'trashe'])->name('pages.trashe');
+// 倫理削除したページを復元
+Route::put('/pages/{id}/restore', [PageController::class, 'restore'])->name('pages.restore');
+// 倫理削除したページを完全削除
+Route::delete('/pages/{id}/force-delete', [PageController::class, 'forceDelete'])->name('pages.forceDelete');

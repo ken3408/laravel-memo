@@ -65,7 +65,7 @@ class PageController extends Controller
   {
     $page = Page::findOrFail($id);
     $page->delete();
-    return redirect('/dashboard')->with('message', 'ページを削除しました');
+    return back()->with('message', 'ページを削除しました');
   }
   public function serach(Request $request)
   {
@@ -87,5 +87,22 @@ class PageController extends Controller
     }
     $contents = Page::all();
     return view('dashboard', compact('notes', 'contents', 'keyword', 'message'));
+  }
+  public function trashe(Request $request)
+  {
+    $pages = Page::onlyTrashed()->get();
+    return view('pages.trache', compact('pages'));
+  }
+  public function restore($id)
+  {
+    $page = Page::onlyTrashed()->findOrFail($id);
+    $page->restore();
+    return redirect()->back()->with('message', 'ページを復元しました。');
+  }
+  public function forceDelete($id)
+  {
+    $page = Page::onlyTrashed()->findOrFail($id);
+    $page->forceDelete();
+    return redirect()->back()->with('message', 'ページを完全削除しました。');
   }
 }
