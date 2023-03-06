@@ -15,6 +15,10 @@
     @if (isset($message))
         {{ $message }}
     @endif
+    <form action="{{ route('logout') }}" method="post">
+        @csrf
+        <input type="submit" value="ログアウト">
+    </form>
     @foreach ($errors->all() as $error)
         <li>{{ $error }}</li>
     @endforeach

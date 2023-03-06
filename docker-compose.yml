@@ -15,6 +15,15 @@ services:
      - .:/var/www/html
     depends_on:
       - mysql
+    environment:
+      MAIL_HOST: mailhog
+      MAIL_PORT: 1025
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+    hostname: mailhog
   mysql:
     image: mysql:5.7
     environment:
