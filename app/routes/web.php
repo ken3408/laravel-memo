@@ -64,7 +64,7 @@ Route::post('/pages/create', [PageController::class, 'store'])->name('pages.stor
 Route::get('/pages/{id}', [PageController::class, 'show'])->name('pages.show');
 
 // ページを更新する
-Route::patch('/pages/delete', [PageController::class, 'update'])->name('pages.update');
+Route::patch('/pages/update/{id}', [PageController::class, 'update'])->name('pages.update');
 
 // ページを削除する
 Route::post('/pages/delete/{id}', [PageController::class, 'delete'])->name('pages.delete');

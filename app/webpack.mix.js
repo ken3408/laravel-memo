@@ -11,6 +11,18 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sourceMaps();
+ mix.js('resources/js/app.js', 'public/js')
+ .sass('resources/sass/app.scss', 'public/css')
+ .sass('resources/sass/dashboard.scss', 'public/css')
+ .sass('resources/sass/_d-wrap.scss', 'public/css')
+ .sass('resources/sass/_d-header.scss', 'public/css')
+ .sass('resources/sass/_d-container.scss', 'public/css')
+ .sass('resources/sass/_d-container-left.scss', 'public/css')
+ .sass('resources/sass/_d-container-right.scss', 'public/css')
+ .sass('resources/sass/page-create.scss', 'public/css')
+ .sass('resources/sass/note.scss', 'public/css')
+ .sass('resources/sass/_n-show.scss', 'public/css')
+ .sass('resources/sass/_n-create.scss', 'public/css')
+ .sourceMaps();
+
+

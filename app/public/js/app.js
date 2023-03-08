@@ -1017,6 +1017,72 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
+/***/ "./resources/sass/_d-container-left.scss":
+/*!***********************************************!*\
+  !*** ./resources/sass/_d-container-left.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fZC1jb250YWluZXItbGVmdC5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL19kLWNvbnRhaW5lci1sZWZ0LnNjc3M/NDZlNiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/_d-container-left.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/_d-container-right.scss":
+/*!************************************************!*\
+  !*** ./resources/sass/_d-container-right.scss ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fZC1jb250YWluZXItcmlnaHQuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9fZC1jb250YWluZXItcmlnaHQuc2Nzcz83NmYwIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/_d-container-right.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/page-create.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/page-create.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wYWdlLWNyZWF0ZS5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL3BhZ2UtY3JlYXRlLnNjc3M/ZWE2YSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/page-create.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/note.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/note.scss ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9ub3RlLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3Mvbm90ZS5zY3NzPzk4ZmYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/note.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/_n-show.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/_n-show.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fbi1zaG93LnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvX24tc2hvdy5zY3NzPzJjY2EiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/_n-show.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/_n-create.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/_n-create.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fbi1jcmVhdGUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9fbi1jcmVhdGUuc2Nzcz8xYWVhIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/_n-create.scss\n");
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -1025,6 +1091,50 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcz9hODBiIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/dashboard.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/dashboard.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9kYXNoYm9hcmQuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9kYXNoYm9hcmQuc2Nzcz83ZTM4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/dashboard.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/_d-wrap.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/_d-wrap.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fZC13cmFwLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvX2Qtd3JhcC5zY3NzPzNhZGYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/_d-wrap.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/_d-header.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/_d-header.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fZC1oZWFkZXIuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9fZC1oZWFkZXIuc2Nzcz9jMGZlIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/_d-header.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/_d-container.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/_d-container.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9fZC1jb250YWluZXIuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9fZC1jb250YWluZXIuc2Nzcz8zZTJlIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/_d-container.scss\n");
 
 /***/ }),
 
@@ -1172,7 +1282,17 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/_d-container": 0,
+/******/ 			"css/_d-header": 0,
+/******/ 			"css/_d-wrap": 0,
+/******/ 			"css/dashboard": 0,
+/******/ 			"css/_n-create": 0,
+/******/ 			"css/_n-show": 0,
+/******/ 			"css/note": 0,
+/******/ 			"css/page-create": 0,
+/******/ 			"css/_d-container-right": 0,
+/******/ 			"css/_d-container-left": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1222,8 +1342,18 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/dashboard.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_d-wrap.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_d-header.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_d-container.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_d-container-left.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_d-container-right.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/page-create.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/note.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_n-show.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/_d-container","css/_d-header","css/_d-wrap","css/dashboard","css/_n-create","css/_n-show","css/note","css/page-create","css/_d-container-right","css/_d-container-left"], () => (__webpack_require__("./resources/sass/_n-create.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

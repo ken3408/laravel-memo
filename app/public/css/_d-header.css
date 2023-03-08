@@ -1,0 +1,57 @@
+@charset "UTF-8";
+header .d-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .d-header-name {
+  font-size: 50px;
+}
+header .d-header-search {
+  display: flex;
+  margin: 30px;
+}
+header .d-header-search-form {
+  width: 450px;
+  height: 40px;
+}
+header .d-header-search-btn {
+  display: inline-block;
+  border-radius: 5%; /* 角丸       */
+  font-size: 11pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 12px 12px; /* 余白       */
+  background: #ffffff; /* 背景色     */
+  color: #274977; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  border: 1px solid #274977; /* 枠の指定 */
+  margin-left: 30px;
+}
+header .d-header-search-btn:hover {
+  color: #ffffff; /* 背景色     */
+  background: #274977; /* 文字色     */
+}
+header .d-header-btnbox {
+  display: flex;
+}
+header .d-header-btn {
+  display: inline-block;
+  border-radius: 5%; /* 角丸       */
+  font-size: 11pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 12px 12px; /* 余白       */
+  background: #ffffff; /* 背景色     */
+  color: #274977; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  border: 1px solid #274977; /* 枠の指定 */
+  margin-right: 20px;
+}
+header .d-header-btn:hover {
+  color: #ffffff; /* 背景色     */
+  background: #274977; /* 文字色     */
+}

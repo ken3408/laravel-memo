@@ -1,4 +1,14 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/_d-container.css": "/css/_d-container.css",
+    "/css/_d-header.css": "/css/_d-header.css",
+    "/css/_d-wrap.css": "/css/_d-wrap.css",
+    "/css/dashboard.css": "/css/dashboard.css",
+    "/css/_n-create.css": "/css/_n-create.css",
+    "/css/_n-show.css": "/css/_n-show.css",
+    "/css/note.css": "/css/note.css",
+    "/css/page-create.css": "/css/page-create.css",
+    "/css/_d-container-right.css": "/css/_d-container-right.css",
+    "/css/_d-container-left.css": "/css/_d-container-left.css"
 }

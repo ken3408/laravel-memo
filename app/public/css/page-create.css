@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.create {
+  background: #248F76;
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0;
+  text-align: center;
+}
+.create-wrap {
+  padding: 20px;
+}
+.create-h2 {
+  font-size: 50px;
+}
+.create-title {
+  color: #ffce00;
+  font-size: 40px;
+}
+.create-textarea {
+  width: 30%;
+  font-size: 20px;
+}
+.create-title-area {
+  height: 30px;
+}
+.create-content-area {
+  height: 250px;
+}
+.create-select {
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+.create-btn {
+  width: 20%;
+  display: inline-block;
+  border-radius: 5%; /* 角丸       */
+  font-size: 15pt; /* 文字サイズ */
+  text-align: center; /* 文字位置   */
+  cursor: pointer; /* カーソル   */
+  padding: 12px 12px; /* 余白       */
+  background: #ffffff; /* 背景色     */
+  color: #6B7280; /* 文字色     */
+  line-height: 1em; /* 1行の高さ  */
+  transition: 0.3s; /* なめらか変化 */
+  margin: 0px 20px 20px;
+}
+.create-btn:hover {
+  color: #ffffff; /* 背景色     */
+  background: #6B7280; /* 文字色     */
+}

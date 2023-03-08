@@ -1,0 +1,89 @@
+.d-container-left {
+  background: #ffffff;
+  flex-basis: 40%;
+  padding: 30px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 6px 6px 16px -5px rgba(0, 0, 0, 0.49);
+  &-btnbox {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 6px 30px;
+    margin-bottom: 40px;
+  }
+  &-bottan {
+    width: 100%;
+    display: inline-block;
+
+  }
+  &-btn {
+    width: 100%;
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 15pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #6B7280;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 1px solid #6B7280;    /* 枠の指定 */
+    margin-right: 20px;
+    &:hover {
+      color         : #ffffff;     /* 背景色     */
+      background    : #6B7280;     /* 文字色     */
+    }
+
+  }
+}
+.page {
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直方向に中央寄せ */
+    margin-bottom: 10px;
+  }
+  &-title {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 20px;
+    font-size: 30px;
+    background-image: -moz-linear-gradient(top, #328F76 0%, #328F76 100%);
+    background-image: -webkit-linear-gradient(top, #328F76 0%,#328F76 100%);
+    background-image: linear-gradient(to bottom, #328F76 0%,#328F76 100%);
+    background-position: 0px 98%;
+    background-size: 0px 2px;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+    &:hover {
+      background-size: 100% 2px;
+      color: #328F76;
+    }
+  }
+  &-delete-btn {
+    margin-left: 30px;
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 15pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 1px solid #000000;    /* 枠の指定 */
+    &:hover {
+      color         : #ffffff;     /* 背景色     */
+      background    : #000000;     /* 文字色     */
+    }
+  }
+
+}
+.font-bold {
+  font-size: 40px;
+}

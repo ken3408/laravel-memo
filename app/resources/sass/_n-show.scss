@@ -1,0 +1,22 @@
+.n-wrap {
+  padding: 20px 60px;
+  height: 80%;
+  
+
+
+}
+.n-box {
+  background: #ffffff;
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 6px 6px 16px -5px rgba(0, 0, 0, 0.49);
+  padding: 30px;
+}
+.n-show {
+  &-category {
+    font-size: 50px;
+  }
+
+}
